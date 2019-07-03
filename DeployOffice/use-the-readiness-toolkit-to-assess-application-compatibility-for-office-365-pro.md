@@ -317,6 +317,11 @@ If you're using the command line version of the Readiness Report Creator, type R
 ReadinessReportCreator.exe -sqlimport “C:\Reports\Finance” -server localhost/SQLEXPRESS -database Readiness -username Officeadmin -password seCRet123$%^
 ```
 
+The user who creates the report will need the following permissions to the SQL server:
+- connect and log on
+- master database: open and read rows
+- readiness database: create (if not exists); update schema (if needed); open and create, read, update, delete rows
+
 
 <a name="labels"> </a>
 
